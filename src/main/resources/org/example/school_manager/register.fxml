@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.istockcorection.controllers.AuthController">
+   <children>
+      <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #4926e0;" HBox.hgrow="ALWAYS">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="School Manager">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Text>
+            <TextFlow textAlignment="CENTER">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Logiciel de gestion d'ecole " textAlignment="RIGHT">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </TextFlow>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Proprietes de School manager" />
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright 2024 version 1.0" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="400.0" prefWidth="300.0" spacing="3.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Connexion">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Text>
+            <TextFlow>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Renseignez vos parametres de connexion pour vous cronnecter a votre compte " />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="10.0" />
+               </VBox.margin>
+            </TextFlow>
+            <Label text="Nom d'utilisateur" />
+            <TextField fx:id="usernameTextField" prefHeight="30.0" promptText="saisir le nom d'utilisateur ici..." />
+            <Label text="Mot de passe" />
+            <PasswordField fx:id="passwordPasswordField" prefHeight="30.0" promptText="saisir le mot de passe ici..." />
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSubmitSignIn" prefHeight="30.0" style="-fx-background-color: #4926e0;" text="Se connecter" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextFlow />
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pas encore de compte ?">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Button mnemonicParsing="false" onAction="#onRegister" style="-fx-background-color: transparent;" text="Inscrivez-vous ?" textFill="#437de9" underline="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <padding>
+            <Insets left="30.0" right="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>
